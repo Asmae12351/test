@@ -1,0 +1,559 @@
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 70px;
+    position: relative;
+    align-items: center;
+   
+}
+
+.navbar1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("WhatsApp Image 2024-08-13 at 19.47.58_cc28ebf4.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.navbar1 * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Styling for the navbar list */
+.navbar1 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 170px;
+}
+
+.navbar1 ul li {
+    margin-left: 13px;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+
+/* Hover effect for links */
+.navbar1 ul li a:hover {
+    color: white;
+}
+
+/* Underline effect on hover */
+.navbar1 ul li a::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: aliceblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* On hover, expand the underline */
+.navbar1 ul li a:hover::after {
+    width: 100%;
+}
+
+.logo i {
+    color: white;
+    font-size: 23px;
+    margin-left: 13px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.srch {
+    padding: 10px;
+}
+
+.btn1 {
+    height: 35px;
+    border-radius: 7px;
+    width: 80px;
+    border: none;
+    background-color: white;
+}
+
+.btn1:hover {
+    height: 35px;
+    border-radius: 7px;
+    width: 80px;
+    color: white;
+    background-color: #b0633c;
+    border: none;
+}
+.section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between; /* Adjusted to space between */
+    align-items: center; /* Vertically centers the content */
+}
+
+.txt {
+    font-size: 30px;
+    color: #b47243;
+    padding: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    flex: 1; /* Allows the text section to take available space */
+}
+
+.swiper {
+    flex: 1; /* Allows the swiper section to take available space */
+    max-width: 600px; /* Set max-width for the images */
+}
+
+.swiper-slide img {
+    width: 600px;
+    height: 600px;/* Maintains aspect ratio */
+   
+}
+
+/* Styles généraux pour le slider */
+.swiper {
+    width: 600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: #b0633c; /* Couleur des flèches */
+    }
+    
+    /* Changer la couleur des points de pagination */
+    .swiper-pagination-bullet {
+    background: #b0633c; /* Couleur par défaut des points */
+    }
+    
+    .swiper-pagination-bullet-active {
+    background:  #b0633c; /* Couleur des points actifs */
+    }
+    
+    /* Changer la couleur de la barre de défilement */
+    .swiper-scrollbar-drag {
+    background: #b0633c; /* Couleur de la barre de défilement */
+    } 
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Pagination */
+.swiper-pagination {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles pour les petits écrans - téléphones */
+@media screen and (max-width: 425px) {
+    .swiper {
+        height: 250px; /* Réduire la hauteur du slider */
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Pour éviter le recadrage excessif */
+    }
+}
+
+/* Styles pour les écrans moyens - tablettes */
+@media screen and (max-width: 768px) {
+    .swiper {
+        height: 350px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles pour les grands écrans */
+@media screen and (min-width: 1024px) {
+    .swiper {
+        height: 600px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #83604c;
+}
+
+a {
+    text-decoration: none;
+    color: #83604c;
+}
+
+a:hover {
+    color: #b7937a;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #cfc3b7;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #83604c;
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #b7937a;
+}
+
+/* Button Styles */
+.btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-warning {
+    background-color: #b7937a;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #83604c;
+    color: white;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: #cfc3b7;
+}
+
+.modal-title {
+    color: #83604c;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}
+
+/* Swiper Styles */
+.swiper {
+    margin-top: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* Custom Scrollbar for Modals */
+.modal-content {
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+/* Input Styles */
+.form-label {
+    color: #83604c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    border: 1px solid #83604c;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #b7937a;
+    outline: none;
+}
+
+.a{
+    color: red;
+    text-decoration: none;
+}
+.a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+
+.section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between; /* Ensures space between text and images */
+    align-items: center; /* Vertically centers the content */
+}
+
+.txt{
+    font-size: 30px;
+    color: #b47243;
+    padding: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.swiper {
+    flex: 1; /* Allows the swiper section to take available space */
+    max-width: 600px; /* Set max-width for the images */
+    height: auto; /* Allows height to adjust automatically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0; /* Ensures no additional margin around the swiper */
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Ensure no margin between slides */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Cover ensures the image fills the container */
+}
+
+/* Styles for the navigation buttons */
+.swiper-button-prev, .swiper-button-next {
+    color: #b0633c; /* Color of the navigation arrows */
+}
+
+/* Pagination styles */
+.swiper-pagination-bullet {
+    background: #b0633c; /* Default color for pagination bullets */
+}
+
+.swiper-pagination-bullet-active {
+    background: #b0633c; /* Active bullet color */
+}
+
+.swiper-scrollbar-drag {
+    background: #b0633c; /* Color of the scrollbar */
+}
+
+/* Pagination positioning */
+.swiper-pagination {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0; /* Ensures no margin below the pagination */
+}
+.section1 {
+    background-color: #b0633c; /* Background color for the section */
+    padding: 20px ;
+    margin: 20px; /* Add padding to the top and bottom */
+}
+
+.container {
+    padding: 10px; /* Padding for the container */
+}
+
+.row {
+    margin-bottom: 20px; /* Space between rows in the form */
+}
+
+.bg-white {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.p-4 {
+    padding: 20px; /* Padding for the form */
+}
+
+h5 {
+    font-weight: 700; /* Bold heading */
+    color: #b0633c; /* Matching color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-label {
+    font-weight: 500; /* Semi-bold for labels */
+    color: #333; /* Dark text color for contrast */
+}
+
+.form-control, .form-select {
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    padding: 10px; /* Padding inside inputs */
+    transition: border-color 0.3s; /* Transition effect */
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #b0633c; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(176, 99, 60, 0.5); /* Add shadow on focus */
+}
+
+.btn2 {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Padding for the button */
+    font-weight: 600; /* Bold text for the button */
+}
+
+.btn2:hover {
+    background-color: #a05e2e; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-lg-3, .col-lg-1 {
+        flex: 0 0 100%; /* Full width for smaller screens */
+        max-width: 100%; /* Override max-width */
+    }
+}
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .navbar1 ul {
+        margin-left: 15px; /* Reduce margin on smaller screens */
+    }
+
+    .navbar1 ul li {
+        margin-left: 10px; /* Reduce space between menu items */
+    }
+
+    .navbar1 ul li a {
+        font-size: 10px; /* Adjust font size for smaller screens */
+        font-weight: 800;
+        margin: 15px;
+    }
+    .btn1{
+      font-size: 10px;
+      padding: 10px;
+      font-weight: 500;
+        
+    }
+    .srch{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 10px;
+        align-items: center;
+        margin-left: 60px;
+        margin-top: -30px;
+       
+    }
+    .navbar1{
+        display: inline-block;
+        
+
+        
+       
+    }
+    .navbar1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        height: 200px;
+        background: url("WhatsApp Image 2024-08-13 at 19.47.58_cc28ebf4.jpg") no-repeat center center;
+        background-size: cover;
+        filter: blur(15px);
+        z-index: -1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .section {
+        flex-direction: column; /* Stack section items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .txt {
+        font-size: 24px; /* Adjust text size for smaller screens */
+        margin-top: 30px; /* Reduce top margin */
+    }
+
+    .swiper {
+        max-width: 100%; /* Allow swiper to take full width */
+        height: 300px; /* Set height for smaller screens */
+    }
+
+}
+
+@media (max-width: 425px) {
+    .txt {
+        font-size: 20px; /* Further reduce text size for very small screens */
+    }
+
+    .btn2 {
+        width: 50%; /* Full width buttons on small screens */
+    }
+
+    .swiper {
+        height: 250px; /* Reduce height of the swiper */
+    }
+
+    .swiper-slide img {
+        object-fit: contain; /* Avoid excessive cropping */
+    }
+}
+
